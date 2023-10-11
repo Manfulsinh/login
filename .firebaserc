@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-signup-c3f1f": {
+      "hosting": {
+        "signup": [
+          "angular-signup-c3f1f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-signup-c3f1f"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "/api": {
+      "target": "https://your-api-endpoint.com",
+      "secure": false
+    }
+  }
+  

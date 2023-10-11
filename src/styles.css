@@ -1,0 +1,47 @@
+
+
+
+ .form-container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 48px;
+    background: #eceff1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+ 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+.sign-up {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.sign-up:hover {
+    text-decoration: underline;
+}
+
+
+.center-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+
