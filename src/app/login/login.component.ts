@@ -33,9 +33,9 @@ export class LoginComponent {
           .then(res => {
             console.log("Login successful");
           })
-          .catch((error: LoginError | null) => { // Explicitly mention the type here
+          .catch((error: LoginError | null) => { 
             if (error) {
-              console.error("Error logging in:", error.message);
+              console.error("Error logging in:", error);
             } else {
               console.error("An unknown error occurred.");
             }

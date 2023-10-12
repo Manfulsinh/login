@@ -1,14 +1,26 @@
-
+<!-- 
 
 
  <mat-toolbar color="primary">
   Rao Information Technology
-  <button mat-button routerLink="login">
-    <mat-icon>login</mat-icon>
-    Login
-  </button>
+  <button mat-button routerLink="sign-up">
+<mat-icon>person_add</mat-icon>
+    Sign-Up
+    </button>
  
 
+</mat-toolbar>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div> -->
+<mat-toolbar color="primary">
+  Rao Information Technology
+
+  <button mat-button (click)="logout()">
+    <mat-icon>exit_to_app</mat-icon>
+    Logout
+  </button>
 </mat-toolbar>
 
 <div class="content">

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { initializeApp } from "firebase/app";
+import { AuthService } from './auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,16 @@ import { initializeApp } from "firebase/app";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'signup';
 
+  constructor(private authService: AuthService, private router: Router) {}
 
-
-constructor(){
-
-  
-}
-
+  logout() {
+    this.authService.logout().then(() => {
+      console.log("Logged out successfully");
+      this.router.navigate(['/login']); 
+    }).catch(error => {
+      console.error("Error logging out: ", error);
+    
+    });
+  }
 }
